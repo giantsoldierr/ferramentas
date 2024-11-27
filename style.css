@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #007BFF;
+}
+
+.upload-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.upload-box input {
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #007BFF;
+}
+
+#result a {
+    color: #007BFF;
+    text-decoration: none;
+}

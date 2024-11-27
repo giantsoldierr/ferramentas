@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Documentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Documentos Personalizados</h1>
+        
+        <!-- Campo para anexar Excel -->
+        <div class="upload-box" id="excel-upload">
+            <p>Arraste e solte seu arquivo Excel aqui ou clique para selecionar</p>
+            <input type="file" id="excel-input" accept=".xlsx">
+        </div>
+        
+        <!-- Campo para anexar Modelo DOCX -->
+        <div class="upload-box" id="docx-upload">
+            <p>Arraste e solte seu modelo DOCX aqui ou clique para selecionar</p>
+            <input type="file" id="docx-input" accept=".docx">
+        </div>
+        
+        <!-- Botão para processar -->
+        <button id="process-button">Gerar Documentos</button>
+        
+        <!-- Área para download -->
+        <div id="result">
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.0.0/pizzip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.19.0/dist/docxtemplater.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
